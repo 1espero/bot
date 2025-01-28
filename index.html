@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>City Bot</title>
+  <style>
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+    #chat-container {
+      width: 100%;
+      max-width: 600px;
+      height: 70%;
+      background-color: #222;
+      border: 2px solid rgb(255, 68, 0);
+      border-radius: 10px;
+      padding: 10px;
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+    }
+    .user-bubble, .bot-bubble {
+      margin: 10px;
+      padding: 10px;
+      border-radius: 10px;
+      max-width: 80%;
+    }
+    .user-bubble {
+      background-color: rgb(227, 40, 58);
+      color: #000;
+      align-self: flex-end;
+    }
+    .bot-bubble {
+      background-color: #045a1d;
+      color: #fff;
+      align-self: flex-start;
+    }
+    .typing-indicator {
+      color: #aaa;
+      font-style: italic;
+      align-self: flex-start;
+      margin: 10px;
+    }
+    #chat-input-container {
+      display: flex;
+      width: 100%;
+      max-width: 600px;
+      margin-top: 10px;
+    }
+    #chat-input {
+      flex: 1;
+      padding: 10px;
+      border: 2px solid rgb(255, 42, 0);
+      border-radius: 5px;
+      font-size: 16px;
+    }
+    #send-button {
+      background-color: rgb(173, 34, 9);
+      color: #000;
+      border: none;
+      border-radius: 5px;
+      padding: 10px 20px;
+      cursor: pointer;
+      margin-left: 5px;
+    }
+    #send-button:hover {
+      background-color: #0c0;
+    }
+    
+    header h1 {
+      margin: 0;
+      font-size: 2em;
+      text-align: center;
+  }
+
+  </style>
+
+</head>
+<body>
+  <header>
+    <h1>MWANZA CITY COLLEGE BOT
+    </h1>
+</header>
+  <div id="chat-container"></div>
+  <div id="chat-input-container">
+    <input id="chat-input" type="text" placeholder="Type your message here..." />
+    <button id="send-button">Send</button>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
