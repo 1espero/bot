@@ -3,7 +3,6 @@
 async function getOpenAIResponse(userMessage) {
   const apiKey = process.env.OPENAI_API_KEY; // Soma API Key kutoka .env
   const endpoint = "https://api.openai.com/v1/chat/completions";
-  
     // Soma taarifa za shule kutoka JSON
     const schoolInfo = await fetch("./school_info.json").then((res) => res.json());
   
